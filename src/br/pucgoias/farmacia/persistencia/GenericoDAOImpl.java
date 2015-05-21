@@ -13,7 +13,7 @@ import br.pucgoias.util.FarmaciaException;
 
 /**
  * Classe que define as operacoes da camada de persistencia generica
- * @author Gilcimar
+ * @author Fábio Henrique Pires
  *
  */
 public class GenericoDAOImpl<T, ID extends Serializable> implements GenericoDAO<T, ID> {
