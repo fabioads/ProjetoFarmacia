@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+      
+	<head>
+	  <title><ui:insert name="title">Farmacia</ui:insert></title>
+	  <link rel="StyleSheet" type="text/css" href=""></link>
+	  
+	  <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"></link>
+      
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<f:view>
+			<h:form>
+			   <div class="page-header row">
+			        <div class="col-lg-2"></div>
+                    <div class="col-lg-9">
+                    	<h1>Projeto Farmacia <small>Tecnologia e Desenvolvimento 2 PUC GOIÁS - CMP1092</small></h1>
+                    </div>                 
+                    <div class="col-lg-1"></div>   
+               </div>
+               
+               <div class="row">
+               	   <div class="col-lg-5"></div>
+	               <div class="col-lg-2">
+	                   <h:commandButton styleClass="btn btn-primary" action="#{produtoController.listar}" value="Listar Produtos"/>
+					   <h:messages />
+				   </div>
+				   <div class="col-lg-5"></div>
+			   </div>
+			</h:form>
+		</f:view>	
+	</body>
+
+</html>
