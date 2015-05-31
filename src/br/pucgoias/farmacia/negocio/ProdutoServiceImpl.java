@@ -3,12 +3,16 @@ package br.pucgoias.farmacia.negocio;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
+
 import br.pucgoias.farmacia.entidade.Produto;
 import br.pucgoias.farmacia.persistencia.ProdutoDAO;
 import br.pucgoias.util.FarmaciaException;
 
+@Service
+@Transactional
 public class ProdutoServiceImpl implements ProdutoService{
 
 	private ProdutoDAO produtoDAO;
